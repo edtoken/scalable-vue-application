@@ -1,0 +1,25 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+styleguide
+
+node_modules
+coverage
+docs
+.DS_Store
+
+npm-debug.log*
+npm-error.log*
+yarn-debug.log*
+yarn-error.log*
+
+.idea
+.vscode

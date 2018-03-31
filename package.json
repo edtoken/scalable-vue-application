@@ -1,0 +1,45 @@
+{
+  "name": "scalable-vue-boilerplate",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "ed <editied@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "static": "./node_modules/static-server/bin/static-server.js -p 5000 -o -f -n ./dist/index.html ./dist",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "lint:watch": "node node_modules/eslint-watch/bin/esw -w --fix --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint && npm run test",
+    "docs": "rm -rf docs && ./node_modules/.bin/jsdoc -c jsdoc.json  -u ./tutorials -p ./src -r ./README.md",
+    "docs:open": "open docs/index.html",
+    "test": "NODE_ENV=production ava --serial --verbose --color",
+    "test:watch": "npm test -- --watch"
+  },
+  "dependencies": {
+    "babel-preset-vue-app": "^2.0.0",
+    "jsdoc": "^3.5.5",
+    "nuxt": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-jsdoc": "^3.5.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-vue": "^4.0.0",
+    "eslint-watch": "^3.1.4",
+    "jsdoc-vue-component": "^2.2.4",
+    "jsdoc-vuedoc": "^1.1.0",
+    "jsdom": "^11.6.2",
+    "minami": "^1.2.3",
+    "prettier": "^1.11.1",
+    "static-server": "^2.2.0"
+  }
+}

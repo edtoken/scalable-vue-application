@@ -1,6 +1,6 @@
 /**
  * @namespace getters
- * @memberOf store.modules.profile
+ * @memberOf store.modules.user
  **/
 
 export default {}

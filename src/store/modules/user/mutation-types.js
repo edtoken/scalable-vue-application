@@ -1,6 +1,6 @@
 /**
  * @namespace mutation-types
- * @memberOf store.modules.profile
+ * @memberOf store.modules.user
  **/
 
 import { makeOnce } from "../../../utils/mutation-types"

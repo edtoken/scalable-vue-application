@@ -3,6 +3,6 @@
  * @memberOf store
  */
 
-const profile = require("./profile")
+const user = require("./user")
 
-export { profile }
+export { user }

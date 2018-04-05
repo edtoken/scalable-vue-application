@@ -1,7 +1,12 @@
-export default function({ isServer, store, req }) {
-  console.log("check-auth", isServer, store, req)
+import { NON_AUTHORIZE_ROUTES } from "../config"
 
-  if (isServer && !req) {
-    return
+export default function({ store, redirect, route }) {
+  if (
+    !store.state.user.authenticated &&
+    NON_AUTHORIZE_ROUTES.indexOf(route.name) === -1
+  ) {
+    redirect({ name: "login" })
   }
+
+  return Promise.resolve()
 }

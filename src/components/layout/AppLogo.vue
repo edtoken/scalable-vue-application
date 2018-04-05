@@ -48,7 +48,7 @@ export default {
     /**
      * Will log the user in.
      *
-     * @param {Object} user The user to be logged in.
+     * @param {Object} user - The user to be logged in.
      */
     login(user) {
       this.$store.dispatch("auth/login", user)

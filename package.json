@@ -20,13 +20,16 @@
     "test:watch": "npm test -- --watch"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-preset-vue-app": "^2.0.0",
     "jsdoc": "^3.5.5",
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "vue-styled-components": "^1.2.2"
   },
   "devDependencies": {
     "ava": "^0.25.0",
     "babel-eslint": "^8.2.1",
+    "deep-copy": "^1.4.2",
     "eslint": "^4.15.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-friendly-formatter": "^3.0.0",

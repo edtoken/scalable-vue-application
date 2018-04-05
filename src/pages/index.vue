@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div>
-      <app-logo/>
+      <AppLogo/>
       <h1 class="title">
         scalable-vue-boilerplate
       </h1>
@@ -9,6 +9,7 @@
         Nuxt.js project
       </h2>
       <div class="links">
+        <button @click="goToLogin">go-to-login</button>
         <a
           href="https://nuxtjs.org/"
           target="_blank"
@@ -28,6 +29,11 @@ import AppLogo from "../components/layout/AppLogo"
 export default {
   components: {
     AppLogo
+  },
+  methods: {
+    goToLogin() {
+      this.$store.dispatch("user/login")
+    }
   }
 }
 </script>

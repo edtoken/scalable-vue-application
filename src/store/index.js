@@ -13,14 +13,19 @@ Vue.config.debug = DEBUG
 
 const modules = require("./modules")
 
-console.log("DEBUG", DEBUG)
-console.log("STORE_LOGGING", STORE_LOGGING)
+let STORE = undefined
 
-export default () =>
-  new Vuex.Store({
+export default () => {
+  if (STORE) {
+    return STORE
+  }
+  STORE = new Vuex.Store({
     modules: modules,
 
     strict: DEBUG,
 
     plugins: STORE_LOGGING ? [createLogger()] : []
   })
+
+  return STORE
+}

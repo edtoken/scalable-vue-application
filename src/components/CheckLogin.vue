@@ -6,7 +6,7 @@
 export default {
   name: "CheckLogin",
   created() {
-    this.$store.dispatch("profile/check")
+    this.$store.dispatch("user/check")
   }
 }
 </script>

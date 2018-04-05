@@ -1,6 +1,6 @@
 /**
  * @namespace mutations
- * @memberOf store.modules.profile
+ * @memberOf store.modules.user
  **/
 
 import Vue from "vue"

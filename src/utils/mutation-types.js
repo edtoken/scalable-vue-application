@@ -22,13 +22,13 @@ let _UNIQUE_ID = 0
  */
 
 /**
- * Making new single unique mutation-type name
+ * Making new single unique mutation-type name.
  *
  * @static
  * @public
  * @function
  *
- * @param {string} typeName - non unique mutation typeName string name, for example rest-api url
+ * @param {string} typeName - Non unique mutation typeName string name, for example rest-api url.
  * @returns {string} - `once/id${_UNIQUE_ID}/${typeName}`
  *
  * @example
@@ -40,13 +40,13 @@ export const makeOnce = typeName => {
 }
 
 /**
- * Making new unique mutation-type names object
+ * Making new unique mutation-type names object.
  *
  * @static
  * @public
  * @function
  *
- * @param {string} typeName - non unique mutation typeName string name, for example rest-api url
+ * @param {string} typeName - Non unique mutation typeName string name, for example rest-api url.
  *
  * @returns {Readonly<MutationTypeObject>}
  */
@@ -73,13 +73,13 @@ export const make = typeName => {
 }
 
 /**
- * Parsing MutationTypeObject and returns origin value
+ * Parsing MutationTypeObject and returns origin value.
  *
  * @static
  * @public
  * @function
  *
- * @param {MutationTypeObject|string} mutationType - MutationTypeObject or makeOnce result, or string
+ * @param {MutationTypeObject|string} mutationType - MutationTypeObject or makeOnce result, or string.
  * @returns {string}
  *
  * @example
